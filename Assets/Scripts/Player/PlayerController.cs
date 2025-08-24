@@ -123,11 +123,14 @@ public class PlayerController : MonoBehaviour
 
     private void HandleFacing()
     {
-        if (!_sprite) return;
         if (Mathf.Abs(_movementInput) <= 0.01f) return;
 
         var isFacingRight = _movementInput > 0f;
-        _sprite.flipX = !isFacingRight;
+        var scale = transform.localScale;
+
+        if ((!isFacingRight || !(scale.x < 0f)) && (isFacingRight || !(scale.x > 0f))) return;
+        scale.x *= -1f;
+        transform.localScale = scale;
     }
 
     private void StartJump()

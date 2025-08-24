@@ -20,6 +20,8 @@ public class PlayerCombat : MonoBehaviour
 
     public void Attack()
     {
+        if (!_animator.GetBool("IsGrounded")) return;
+        
         if (Time.time - _lastAttackTime > _comboResetTime)
         {
             _attackIndex = 0;
