@@ -551,6 +551,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: 283c8286ff7f8a74082557772d9afce2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1280757764}
+    - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: 283c8286ff7f8a74082557772d9afce2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 577704534}
+    - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: 283c8286ff7f8a74082557772d9afce2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1023554086}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 283c8286ff7f8a74082557772d9afce2, type: 3}
       insertIndex: -1
@@ -608,7 +614,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   _animator: {fileID: 244538080}
-  _comboResetTime: 3
+  _punchOneCollider: {fileID: 1280757765}
+  _punchTwoCollider: {fileID: 577704535}
+  _punchThreeCollider: {fileID: 1023554087}
+  _comboResetTime: 1
 --- !u!1 &274992241
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,6 +649,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &577704533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 577704534}
+  - component: {fileID: 577704535}
+  m_Layer: 0
+  m_Name: PunchTwoCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577704534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577704533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.007267576, y: 0.028132008, z: 0.25002098, w: 0.9678044}
+  m_LocalPosition: {x: 0.017, y: -0.013, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 244538078}
+  m_LocalEulerAnglesHint: {x: 0, y: 3.33, z: 28.97}
+--- !u!70 &577704535
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577704533}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.23868106, y: 0.18999982}
+  m_Size: {x: 0.21538599, y: 0.07598745}
+  m_Direction: 1
 --- !u!1 &683525050
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +793,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683525050}
   m_CullTransparentMesh: 1
+--- !u!1 &1023554085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1023554086}
+  - component: {fileID: 1023554087}
+  m_Layer: 0
+  m_Name: PunchThreeCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1023554086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023554085}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.094, y: 0.133, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 244538078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1023554087
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023554085}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.24004328, y: 0.19960171}
+  m_Size: {x: 0.16053605, y: 0.26889837}
+  m_Direction: 0
 --- !u!1 &1033908258
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +1006,7 @@ GameObject:
   - component: {fileID: 1280757764}
   - component: {fileID: 1280757765}
   m_Layer: 0
-  m_Name: Punch01Collider
+  m_Name: PunchOneCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -910,7 +1057,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

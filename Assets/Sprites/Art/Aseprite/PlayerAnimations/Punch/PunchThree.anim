@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Punch01
+  m_Name: PunchThree
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,19 +21,21 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2975722141594135150, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - time: 0.069999695
-      value: {fileID: 8970978612397818535, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+      value: {fileID: -3057094398248301550, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - time: 0.07000065
+      value: {fileID: 5480819068509104253, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
     - time: 0.14000034
-      value: {fileID: 1199249360335223226, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+      value: {fileID: 1587976681913332244, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
     - time: 0.21000004
-      value: {fileID: 4345192687497750966, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - time: 0.27999973
-      value: {fileID: -8408241595961228082, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+      value: {fileID: 2106965129390604212, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - time: 0.2800007
+      value: {fileID: -180264798884173616, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
     - time: 0.35000038
-      value: {fileID: -1029949183567445329, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - time: 0.41000038
-      value: {fileID: -1029949183567445329, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+      value: {fileID: -5819790874416967651, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - time: 0.42000008
+      value: {fileID: -4030147799919342910, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - time: 0.48000008
+      value: {fileID: -4030147799919342910, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,19 +58,20 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2975722141594135150, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - {fileID: 8970978612397818535, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - {fileID: 1199249360335223226, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - {fileID: 4345192687497750966, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - {fileID: -8408241595961228082, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - {fileID: -1029949183567445329, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
-    - {fileID: -1029949183567445329, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: -3057094398248301550, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: 5480819068509104253, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: 1587976681913332244, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: 2106965129390604212, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: -180264798884173616, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: -5819790874416967651, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: -4030147799919342910, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
+    - {fileID: -4030147799919342910, guid: 9aef5a7093a2fbe499543c20877bb0bc, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.42000037
+    m_StopTime: 0.49000007
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -89,20 +92,20 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.15
-    functionName: StartPunch01Frames
+    functionName: StartPunchThreeFrames
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.22
-    functionName: EndPunch01Frames
+    functionName: EndPunchThreeFrames
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.42
+  - time: 0.49
     functionName: ResetCombo
     data: 
     objectReferenceParameter: {fileID: 0}
